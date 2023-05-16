@@ -7,14 +7,13 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    input1 = browser.find_element(By.CSS_SELECTOR, '[placeholder="Input your first name"]')
+    input1 = browser.find_element(By.CSS_SELECTOR, 'input.first:required')
     input1.send_keys("Elena")
-    input2 = browser.find_element(By.CSS_SELECTOR, '[placeholder="Input your last name"]')
+    input2 = browser.find_element(By.CSS_SELECTOR, 'input.second:required')
     input2.send_keys("Drigant")
-    input3 = browser.find_element(By.CSS_SELECTOR, '[placeholder="Input your email"]')
+    input3 = browser.find_element(By.CSS_SELECTOR, 'input.third:required')
     input3.send_keys("testest@gmail.com")
 
-    # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()
 
