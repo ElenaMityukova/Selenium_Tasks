@@ -1,1 +1,1 @@
-# Selenium_Tasks
+# Selenium_auto_tests_Stepik_course
